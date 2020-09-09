@@ -1,10 +1,12 @@
 import React from 'react';
-import { Container } from "./ui/components"
+import { Container, Section } from "./ui/components"
 
 function App() {
   return (
     <Container>
-      Hello
+      <Section id="home">
+        oi
+      </Section>
     </Container>
   )
 }

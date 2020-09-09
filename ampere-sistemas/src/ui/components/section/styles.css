@@ -1,0 +1,13 @@
+.section{
+    justify-content: center;
+    height: 45vh;
+    background: grey;
+    object-fit: cover;
+}
+
+.section-interna{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    background: yellow;
+}

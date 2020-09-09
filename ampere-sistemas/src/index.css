@@ -7,4 +7,15 @@ body, html, #root {
   width: 100%;
   height: 100%;
   margin: 0;
+  --cor-principal: rgb(78, 18, 18);
+  --cor-secundaria: rgb(194, 84, 84);
+  --cor-texto-principal: white;
+  --cor-texto-secundario: white;
+  --cor-hover: grey
+}
+
+.container{
+  display: flex;
+  height: 100%;
+  width: 100%;
 }

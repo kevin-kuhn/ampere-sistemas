@@ -1,6 +1,7 @@
-.container-geral{
-    display: flex;
-    height: 100%;
-    width: 100%;
+.geral{
     flex-direction: column;
+}
+
+.interno{
+    margin-top: 50px;
 }
