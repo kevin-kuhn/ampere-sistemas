@@ -1,7 +1,8 @@
 .geral{
     flex-direction: column;
+    width: 80%;
 }
 
 .interno{
-    margin-top: 50px;
+    margin-top: 80px;
 }

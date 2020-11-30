@@ -1,0 +1,1 @@
+export { segurancaImagens } from "./carrossel-seguranca"

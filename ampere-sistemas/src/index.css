@@ -7,15 +7,43 @@ body, html, #root {
   width: 100%;
   height: 100%;
   margin: 0;
-  --cor-principal: rgb(78, 18, 18);
-  --cor-secundaria: rgb(194, 84, 84);
+  font-family: 'Exo', sans-serif;
+  font-size: large;
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+  --cor-principal: rgb(241, 133, 133);
+  --cor-secundaria: rgb(236, 172, 172);
   --cor-texto-principal: white;
   --cor-texto-secundario: white;
-  --cor-hover: grey
+  --cor-hover: rgb(224, 146, 146);
 }
 
 .container{
   display: flex;
   height: 100%;
   width: 100%;
+}
+
+.titulo {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+  z-index: 10;
+}
+
+.texto {
+  font-size: 18px;
+  line-height: 22px;
+  font-style: italic;
+  z-index: 10;
+}
+
+.box-esconder {
+  display: none;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
 }

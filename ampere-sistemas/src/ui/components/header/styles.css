@@ -1,10 +1,18 @@
-.container-header{
+.container-header {
     display: flex;
     width: 100%;
-    height: 50px;
-    justify-content: space-around;
+    flex-direction: column;
+    height: 80px;
     background: var(--cor-principal);
     position: fixed;
+    z-index: 100;
+}
+
+.divisao-header-inicial {
+    display: flex;
+    justify-content: space-around;
+    min-height: 100%;
+    width: 100%;
 }
 
 .menu {
@@ -12,39 +20,98 @@
     list-style: none;
     border: none;
     margin: 0;
-    padding: 0; 
-    display: flex;    
+    padding: 0;
+    display: flex;
     justify-content: center;
     width: 50%;
-} 
+}
 
 .menu-item {
     display: flex;
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    transition: 0.4s;
     height: 100%;
     width: 33%;
     cursor: pointer;
 }
 
-.menu .texto-header{
-    border: none;
-    color: var(--cor-texto-principal); 
-    text-decoration: underline;
-    text-decoration:none;
-    cursor: pointer;   
-}
-
-.menu .menu-item:hover { 
-    background-color: var(--cor-hover);
-}
-
-.menu .invisivel{
-    display:none;
-}
-
-.menu .visivel{
+.texto-header {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    outline: none;
+    color: var(--cor-texto-principal);
+}
+
+.menu .texto-header {
+    border: none;
+    color: var(--cor-texto-principal);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu .menu-item:hover {
+    background: var(--cor-hover);
+}
+
+.menu .invisivel {
+    display: none;
+}
+
+.menu .visivel {
+    display: flex;
+}
+
+.lista-servicos {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    list-style: none;
+}
+
+.item-servicos {
+    padding: 10px;
+}
+
+.box-aparecer {
+    display: flex;
+    width: 100%;
+    background: var(--cor-hover);
+    justify-content: center;
+    color: var(--cor-texto-principal);
+}
+
+.box-aparecer:hover {
+    background: var(--cor-principal);
+}
+
+@keyframes aparecer-box {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes aparecer-box {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

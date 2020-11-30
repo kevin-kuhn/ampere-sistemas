@@ -1,0 +1,54 @@
+.container-utilitario {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    bottom: 0px;
+    right: 0px;
+}
+
+.localizador-servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    background: var(--cor-secundaria);
+}
+
+.list-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.item-box {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.item-box-link {}
+
+.item-box-link:hover {
+    color: var(--cor-principal);
+}
+
+.aumentar {
+    font-size: 25px;
+}
+
+.logo-whats {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}

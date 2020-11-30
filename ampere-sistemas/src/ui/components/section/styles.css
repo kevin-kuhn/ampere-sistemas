@@ -1,13 +1,57 @@
-.section{
-    justify-content: center;
-    height: 45vh;
-    background: grey;
-    object-fit: cover;
-}
-
 .section-interna{
     display: flex;
-    width: 80%;
+    width: 92%;
     height: 100%;
-    background: yellow;
+    align-items: center;
+}
+
+.section{
+    justify-content: center;
+    position: relative;
+    height: 72vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box-opaco{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.3;
+}
+
+.centro-justify{
+    display: flex;
+    justify-content: center;
+}
+
+.centro-align{
+    display: flex;
+    align-items: center;
+}
+
+.padrao{
+    background: var(--cor-secundaria);
+}
+
+.seguranca{
+    background-image: url("../../assets/img/cameraTest.jpeg");
+}
+
+.auxiliar-banner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+.divisao-section-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.divisao-section-row{
+    display: flex;
 }
